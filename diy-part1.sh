@@ -15,3 +15,8 @@
 
 # 添加feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+
+echo 'src-git istore https://github.com/linkease/istore' >>feeds.conf.default
+echo 'src-git naspackage https://github.com/linkease/nas-packages' >>feeds.conf.default
+echo 'src-git nasluci https://github.com/linkease/nas-packages-luci' >>feeds.conf.default
+echo 'src-git wolplus https://github.com/sundaqiang/openwrt-packages.git' >>feeds.conf.default
