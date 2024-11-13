@@ -128,3 +128,7 @@ echo "替换成功！"
 #mkdir -p files/etc
 #echo "# Defaults are configured in /etc/sysctl.d/* and can be customized in this file" > files/etc/sysctl.conf
 #echo "net.core.rmem_max=524288" >> files/etc/sysctl.conf
+
+# 修改主机名字，把ImmortalWrt修改你喜欢的就行（不能纯数字或者使用中文）
+sed -i 's/MlhKWrt/BrianRT_$(TZ=UTC-8 date "+%Y%m%d")/g' package/base-files/files/bin/config_generate
+git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
